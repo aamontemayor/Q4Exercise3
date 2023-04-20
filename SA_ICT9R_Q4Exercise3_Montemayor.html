@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<title>Exercise 3</title>
+	<style>
+		body{
+			background-color: #C5CAE9;
+		}
+		.container{
+			padding: 50px;
+		}
+		div{
+			background-color: #E8EAF6;
+		}
+		ul.myUL {
+  			display: inline-block;
+  			text-align: left;
+  			font-family: 'Josefin Sans', sans-serif;
+		}
+		h1{
+			color: #5C6BC0;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 45px;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		h3{
+			color: #5C6BC0;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 40px;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		h4{
+			color: #5C6BC0;
+			text-align: center;
+			font-size: 28px;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		li{
+			color: #5C6BC0;
+			font-size: 25px;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		p{
+			color: #303F9F;
+			text-align: center;
+			font-size: 20px;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+	</style>
+</head>
+<body>
+	<br>
+	<br>
+	<h1><b>JavaScript Arithmetic Operators</b></h1>
+	<hr>
+	<div class="container" align="center">
+		<br>
+		<p><b>=====================================================================</b></p>
+		<br>
+		<br>
+		<h3>Math Problems (5 points):</h3>
+		<h4>Answer all problems as x = 10 and y = 5</h4>
+		<br>
+		<ul class="myUL">
+			<li>x + y = <strong id="p1"></strong></li>
+			<li>y - x = <strong id="p2"></strong></li>
+			<li>x * y = <strong id="p3"></strong></li>
+			<li>y / x = <strong id="p4"></strong></li>
+			<li>x % y = <strong id="p5"></strong></li>
+		</ul>
+		<br>
+		<br>
+		<br>
+		<p><b>=====================================================================</b></p>
+		<script>
+			var x=10, y=5
+			var sum = x + y;
+			var diff = y - x;
+			var mul = x * y;
+			var quo = y / x;
+			var mod = x % y;
+
+			alert("The sum of variable x and y is: " + sum + "\n" + "The difference of variable y and x is: " + diff + "\n" + "The multiple of variable x and y is: " + mul + "\n" + "The quotient of variable y and x is: " + quo + "\n" + "The modulus of variable x and 4 is: " + mod + "\n");
+
+			//variable declaration;assignment of values
+			document.getElementById("p1").innerHTML = x + y;
+			document.getElementById("p2").innerHTML = y - x;
+			document.getElementById("p3").innerHTML = x * y;
+			document.getElementById("p4").innerHTML = y / x;
+			document.getElementById("p5").innerHTML = x % y;
+		</script>
+	</div>
+</body>
+</html>
